@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Relatório Final de Mídia — Thaysa Lippy 4400 · Eleições 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+:root{
+  --bg:#F7F9FB; --surface:#FFFFFF; --ink:#16283E; --muted:#5B6B80; --line:#DFE7EF;
+  --blue:#3E7BBE; --blue-deep:#2C5A8F; --blue-mid:#4E83C4;
+  --gold:#FFC72C; --gold-ink:#8A6400; --track:#EAF0F6;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#0E1726; --surface:#16233A; --ink:#E8EEF6; --muted:#9FB0C4; --line:#283B57;
+  --blue:#6FA3DC; --blue-deep:#4E83C4; --blue-mid:#6FA3DC;
+  --gold:#FFC72C; --gold-ink:#E8B84B; --track:#1D2C45;
+}}
+:root[data-theme="dark"]{
+  --bg:#0E1726; --surface:#16233A; --ink:#E8EEF6; --muted:#9FB0C4; --line:#283B57;
+  --blue:#6FA3DC; --blue-deep:#4E83C4; --blue-mid:#6FA3DC;
+  --gold:#FFC72C; --gold-ink:#E8B84B; --track:#1D2C45;
+}
+:root[data-theme="light"]{
+  --bg:#F7F9FB; --surface:#FFFFFF; --ink:#16283E; --muted:#5B6B80; --line:#DFE7EF;
+  --blue:#3E7BBE; --blue-deep:#2C5A8F; --blue-mid:#4E83C4;
+  --gold:#FFC72C; --gold-ink:#8A6400; --track:#EAF0F6;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--ink);
+  font:16px/1.6 "Archivo", system-ui, -apple-system, sans-serif; margin:0; padding:0;}
+.wrap{max-width:1060px; margin:0 auto; padding:40px 24px 80px;}
+
+/* HERO */
+header.hero{position:relative; border-bottom:3px solid var(--gold); padding:36px 0 40px; margin-bottom:12px; overflow:hidden;}
+.eyebrow{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--blue); font-weight:600; margin:0 0 10px;}
+h1{font-size:clamp(28px,4.4vw,44px); line-height:1.1; margin:0 0 12px; font-weight:900; text-wrap:balance;}
+.sub{color:var(--muted); margin:0; max-width:66ch;}
+.bignum{font-size:clamp(72px,14vw,150px); font-weight:900; letter-spacing:-.03em; line-height:1;
+  color:var(--gold); opacity:.16; position:absolute; right:-6px; top:8px; user-select:none; pointer-events:none;
+  animation:floatNum 6s ease-in-out infinite;}
+@keyframes floatNum{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+h2{font-size:22px; font-weight:800; margin:0 0 4px;}
+section{margin:48px 0;}
+.sec-eyebrow{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:600; margin:0 0 6px;}
+.lede{color:var(--muted); margin:6px 0 20px; max-width:72ch;}
+
+/* contadores */
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin:26px 0 0;}
+.stat{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:20px 20px 16px; position:relative; overflow:hidden;}
+.stat::after{content:""; position:absolute; inset:auto 0 0 0; height:3px; background:linear-gradient(90deg,var(--blue),var(--gold)); transform:scaleX(0); transform-origin:left; transition:transform 1s ease .2s;}
+.stat.on::after{transform:scaleX(1);}
+.stat .v{font-size:clamp(26px,3.4vw,34px); font-weight:900; font-variant-numeric:tabular-nums; letter-spacing:-.01em;}
+.stat .l{font-size:13px; color:var(--muted); margin-top:2px;}
+.stat .d{font-size:12px; color:var(--muted); margin-top:8px; border-top:1px solid var(--line); padding-top:8px;}
+.stat.hl .v{color:var(--gold-ink);}
+
+/* funil */
+.funnel{display:grid; gap:10px; margin-top:18px;}
+.fstep{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:20px 22px;
+  opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease; position:relative;}
+.fstep.on{opacity:1; transform:none;}
+.fstep:nth-child(2){transition-delay:.15s; margin-left:4%;}
+.fstep:nth-child(3){transition-delay:.3s; margin-left:8%;}
+.fstep .ftag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  background:var(--blue); color:#fff; border-radius:999px; padding:3px 12px; margin-bottom:8px;}
+.fstep:nth-child(3) .ftag{background:var(--gold); color:#4a3600;}
+.fstep h3{margin:0 0 6px; font-size:17px; font-weight:800;}
+.fstep p{margin:0; color:var(--muted); font-size:14.5px; max-width:80ch;}
+.fstep .fmetric{margin-top:10px; font-size:13px; font-weight:700; color:var(--blue);}
+.fstep:nth-child(3) .fmetric{color:var(--gold-ink);}
+
+/* mockups de anúncio */
+.adgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:16px; margin-top:18px;}
+.adcard{background:var(--surface); border:1px solid var(--line); border-radius:14px; overflow:hidden;
+  box-shadow:0 2px 12px rgba(22,40,62,.06); opacity:0; transform:translateY(14px); transition:opacity .5s ease, transform .5s ease;}
+.adcard.on{opacity:1; transform:none;}
+.adcard:nth-child(2){transition-delay:.1s;} .adcard:nth-child(3){transition-delay:.2s;} .adcard:nth-child(4){transition-delay:.3s;}
+.adhead{display:flex; align-items:center; gap:10px; padding:12px 14px 8px;}
+.adavatar{width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg,var(--blue),var(--blue-deep));
+  color:#fff; font-weight:900; font-size:14px; display:flex; align-items:center; justify-content:center;}
+.adid strong{display:block; font-size:13.5px;}
+.adid span{font-size:11px; color:var(--muted); display:block; line-height:1.35;}
+.adbody{padding:4px 14px 12px; font-size:13.5px; line-height:1.5;}
+.adbanner{margin:0 14px; border-radius:8px; padding:22px 16px; text-align:center; color:#fff; font-weight:900;
+  background:linear-gradient(135deg,var(--blue-deep),var(--blue)); font-size:20px; letter-spacing:.01em;}
+.adbanner small{display:block; font-weight:600; font-size:11px; opacity:.85; margin-top:4px; letter-spacing:.08em;}
+.adbanner.gold{background:linear-gradient(135deg,#d9a410,var(--gold)); color:#4a3600;}
+.admeta{display:flex; gap:8px; flex-wrap:wrap; padding:12px 14px 14px;}
+.chip{font-size:11px; font-weight:700; border:1px solid var(--line); color:var(--muted); border-radius:999px; padding:3px 10px;}
+.chip.hot{border-color:var(--gold); color:var(--gold-ink);}
+
+/* tabela praças */
+.tscroll{overflow-x:auto; border:1px solid var(--line); border-radius:8px; background:var(--surface); margin-top:16px;}
+table{border-collapse:collapse; width:100%; font-size:14px; min-width:560px;}
+th{font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); font-weight:600;
+  text-align:left; padding:11px 14px; border-bottom:2px solid var(--line);}
+th.num{text-align:right;}
+td{padding:9px 14px; border-bottom:1px solid var(--line);}
+tr:last-child td{border-bottom:none;}
+td.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap;}
+
+ul.rules{padding-left:20px; margin:12px 0 0;} ul.rules li{margin:9px 0; max-width:78ch;}
+ul.rules li b{color:var(--blue);}
+.legal{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:8px; padding:18px 20px; margin-top:16px; font-size:14.5px; color:var(--muted);}
+.legal b{color:var(--ink);}
+.cta-final{text-align:center; padding:46px 20px; border-radius:14px; margin-top:20px;
+  background:linear-gradient(135deg,var(--blue-deep),var(--blue)); color:#fff; overflow:hidden; position:relative;}
+.cta-final .n{font-size:clamp(56px,10vw,96px); font-weight:900; letter-spacing:.02em; color:var(--gold); line-height:1; animation:pulseN 2.4s ease-in-out infinite;}
+@keyframes pulseN{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+.cta-final p{margin:10px 0 0; font-weight:700; letter-spacing:.02em;}
+.cta-final small{display:block; margin-top:6px; opacity:.85; font-weight:500;}
+footer{margin-top:60px; border-top:1px solid var(--line); padding-top:18px; font-size:13px; color:var(--muted);}
+footer a{color:var(--blue);}
+@media (prefers-reduced-motion:reduce){ .bignum,.cta-final .n{animation:none} .fstep,.adcard{opacity:1; transform:none} }
+</style>
+
+<div class="wrap">
+<header class="hero">
+  <div class="bignum">4400</div>
+  <p class="eyebrow">Relatório final de mídia · Meta (Facebook + Instagram) · 16/08 – 30/09/2026</p>
+  <h1>47 dias de campanha digital.<br>3 milhões de pessoas alcançadas.</h1>
+  <p class="sub">Balanço completo da mídia paga da campanha <strong>Thaysa Lippy 4400 — Deputada Federal</strong>: números consolidados do Gerenciador de Anúncios, a estratégia do funil eleitoral executada etapa por etapa e os criativos que levaram o 4400 pra cabeça do eleitor.</p>
+</header>
+
+<section>
+  <p class="sec-eyebrow">Os números da campanha</p>
+  <h2>Escala de estado inteiro, eficiência de campanha grande</h2>
+  <p class="lede">Dados consolidados da conta de anúncios oficial da campanha (Gerenciador Meta, 30/09/2026, período total desde 16/08).</p>
+  <div class="stats">
+    <div class="stat hl"><div class="v" data-count="3003308">0</div><div class="l">pessoas alcançadas (contas únicas)</div><div class="d">escala equivalente ao eleitorado inteiro do Amazonas</div></div>
+    <div class="stat hl"><div class="v"><span data-count="48">0</span>,4 mi</div><div class="l">impressões entregues</div><div class="d">cada eleitor alcançado viu a campanha 16 vezes em média</div></div>
+    <div class="stat"><div class="v">R$ <span data-count="192252">0</span></div><div class="l">investimento total</div><div class="d">apenas 6,1% do teto legal — disciplina financeira total</div></div>
+    <div class="stat"><div class="v">R$ 3,97</div><div class="l">CPM médio (custo por mil impressões)</div><div class="d">fração do custo de qualquer mídia tradicional</div></div>
+    <div class="stat"><div class="v"><span data-count="36">0</span> campanhas</div><div class="l">44 anúncios veiculados</div><div class="d">Manaus + campanhas dedicadas por município do interior</div></div>
+    <div class="stat"><div class="v">99/100</div><div class="l">pontuação da conta na Meta</div><div class="d">conta operada no mais alto padrão técnico da plataforma</div></div>
+  </div>
+</section>
+
+<section>
+  <p class="sec-eyebrow">A estratégia</p>
+  <h2>O funil eleitoral: cada real no estágio certo, na hora certa</h2>
+  <p class="lede">Campanha digital que ganha eleição não é a que grita mais alto no fim — é a que constrói o caminho do voto por etapas. Foi exatamente o que esta campanha executou, do primeiro ao último dia permitido por lei.</p>
+  <div class="funnel">
+    <div class="fstep">
+      <span class="ftag">Etapa 1 · Alcance</span>
+      <h3>Apresentar a candidata pra todo o Amazonas (16/08 em diante)</h3>
+      <p>Base do funil: alcance massivo com CPM baixo, quando a atenção ainda era barata. Jingle, trajetória e bandeiras — representatividade feminina, famílias atípicas, proteção da infância e da mulher — entregues a milhões de pessoas em Manaus e em campanhas dedicadas por município: Parintins, Itacoatiara, Manacapuru, Tabatinga, Humaitá, Manicoré, Autazes e além.</p>
+      <div class="fmetric">Resultado: 3.003.308 pessoas únicas conheceram a candidatura</div>
+    </div>
+    <div class="fstep">
+      <span class="ftag">Etapa 2 · Consideração</span>
+      <h3>Transformar quem conhece em quem considera votar (setembro)</h3>
+      <p>Sobre a audiência já construída, entraram os criativos de pauta e emoção: as 12 leis pras famílias atípicas, o combate à violência contra a mulher, a proteção da infância. Anúncios que geram reação, comentário e compartilhamento — e que pagam menos por interação justamente porque a Etapa 1 veio antes.</p>
+      <div class="fmetric">Resultado: pautas da candidata viraram conversa em todo o estado</div>
+    </div>
+    <div class="fstep">
+      <span class="ftag">Etapa 3 · Lembrança</span>
+      <h3>Fixar o número na memória: o santinho virtual (23/09 – 01/10)</h3>
+      <p>Na semana da decisão, a campanha virou a chave: vídeo-jingle de 7 segundos, nome, foto e número <strong>4400</strong>, entregue em frequência máxima ao público já engajado. Um único criativo replicado em 14 anúncios simultâneos — o santinho de papel reinventado no digital, chegando à palma da mão do eleitor.</p>
+      <div class="fmetric">Resultado: mais de 1 milhão de impressões do "Agora eu voto 4400!" em 7 dias</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="sec-eyebrow">Os criativos</p>
+  <h2>O que o eleitor viu — as peças que carregaram a campanha</h2>
+  <p class="lede">Reprodução fiel dos anúncios veiculados (texto real, dados públicos da Biblioteca de Anúncios da Meta). Todos com aviso "Propaganda Eleitoral" + CNPJ da campanha, do primeiro ao último dia.</p>
+  <div class="adgrid">
+    <div class="adcard">
+      <div class="adhead"><div class="adavatar">TL</div><div class="adid"><strong>Thaysa Lippy</strong><span>Patrocinado · Propaganda Eleitoral<br>ELEICAO 2026 THAYSA LIPPY DE SOUZA…</span></div></div>
+      <div class="adbody">Agora eu voto 4400! 🚀💙<br><br>Thaysa Lippy 4400 Deputada Federal</div>
+      <div class="adbanner gold">AGORA EU VOTO 4400!<small>VÍDEO-JINGLE · 7 SEGUNDOS</small></div>
+      <div class="admeta"><span class="chip hot">Santinho virtual</span><span class="chip">14 anúncios com este criativo</span><span class="chip">+1 mi impressões em 7 dias</span></div>
+    </div>
+    <div class="adcard">
+      <div class="adhead"><div class="adavatar">TL</div><div class="adid"><strong>Thaysa Lippy</strong><span>Patrocinado · Propaganda Eleitoral<br>ELEICAO 2026 THAYSA LIPPY DE SOUZA…</span></div></div>
+      <div class="adbody">Nas últimas duas eleições, o Amazonas ficou de fora da representação feminina no Congresso Nacional. As mulheres amazonenses merecem ter uma voz em Brasília… Isso precisa mudar. E eu quero ser essa mudança. 🙏</div>
+      <div class="adbanner">UMA VOZ FEMININA<br>PRA O AMAZONAS<small>BANDEIRA-MÃE DA CAMPANHA</small></div>
+      <div class="admeta"><span class="chip hot">Top investimento</span><span class="chip">R$ 15–20 mil</span><span class="chip">+1 mi impressões</span></div>
+    </div>
+    <div class="adcard">
+      <div class="adhead"><div class="adavatar">TL</div><div class="adid"><strong>Thaysa Lippy</strong><span>Patrocinado · Propaganda Eleitoral<br>ELEICAO 2026 THAYSA LIPPY DE SOUZA…</span></div></div>
+      <div class="adbody">Eu ouvi muitas mães atípicas… Nesses dois mandatos, fiz questão de transformar cada dor em lei. São 12 leis aprovadas para essas famílias… Essas famílias não podem esperar. 🙏💙</div>
+      <div class="adbanner">12 LEIS PRAS<br>FAMÍLIAS ATÍPICAS<small>A PAUTA QUE É HISTÓRIA DE VIDA</small></div>
+      <div class="admeta"><span class="chip">R$ 8–9 mil</span><span class="chip">+1 mi impressões</span><span class="chip">Etapa de consideração</span></div>
+    </div>
+    <div class="adcard">
+      <div class="adhead"><div class="adavatar">TL</div><div class="adid"><strong>Thaysa Lippy</strong><span>Patrocinado · Propaganda Eleitoral<br>ELEICAO 2026 THAYSA LIPPY DE SOUZA…</span></div></div>
+      <div class="adbody">Vamos avançar juntos! 🚀 O Amazonas merece uma voz feminina forte em Brasília, e eu estou pronta para essa missão. Bora de 4400! 💙🗳️</div>
+      <div class="adbanner">JINGLE OFICIAL<small>A MÚSICA QUE FICOU NA CABEÇA DO ELEITOR</small></div>
+      <div class="admeta"><span class="chip hot">Abertura da campanha</span><span class="chip">R$ 15–20 mil</span><span class="chip">+1 mi impressões</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="sec-eyebrow">Posição competitiva</p>
+  <h2>Onde a campanha terminou no campo federal do AM</h2>
+  <ul class="rules">
+    <li><b>4ª posição entre 41 candidaturas monitoradas</b> em investimento Meta no estado — pelotão de frente do início ao fim, mesmo com o campo quase dobrando de tamanho na reta final. <a href="/ranking-meta-am-2026.html">Ranking completo aqui</a>.</li>
+    <li><b>1ª entre as mulheres</b>, com 45% de vantagem sobre a segunda colocada — num estado que não elege uma deputada federal desde 2014, a bandeira virou execução.</li>
+    <li><b>Eficiência recorde:</b> 44 anúncios concentraram todo o investimento, contra concorrentes pulverizando em 700+ peças. Mensagem única, memória máxima.</li>
+    <li><b>6,1% do teto legal usado</b> (R$ 3,17 mi): resultado de ponta com disciplina financeira — prestação de contas limpa, notas fiscais no CNPJ da campanha, margem intacta.</li>
+  </ul>
+</section>
+
+<section>
+  <p class="sec-eyebrow">Encerramento · 01/10</p>
+  <h2>Dentro da lei, do primeiro ao último segundo</h2>
+  <div class="legal">
+    Nos termos do <b>art. 57-C da Lei nº 9.504/97</b> e do Calendário Eleitoral do TSE (<b>Res. nº 23.760/2026</b>), quinta-feira, <b>1º de outubro é o último dia de circulação de propaganda paga na internet</b>. De 02 a 05/10, todo impulsionamento é vedado. Todas as campanhas foram programadas pra encerrar dentro do prazo, e 100% da veiculação rodou com aviso "Propaganda Eleitoral" e CNPJ da campanha na categoria correta da Meta. A mídia paga silencia; o número já está plantado.
+  </div>
+  <div class="cta-final">
+    <div class="n">4400</div>
+    <p>Missão da mídia cumprida. Agora é com o eleitor.</p>
+    <small>Domingo, 04 de outubro — Thaysa Lippy, Deputada Federal</small>
+  </div>
+</section>
+
+<footer>
+  Relatório final de mídia — Campanha Thaysa Lippy 4400 · Gestão de tráfego: <b>Diego Nobre / DNIA</b> · Fontes: Gerenciador de Anúncios Meta (conta oficial da campanha, consolidado 16/08–30/09/2026) e Biblioteca de Anúncios da Meta (dados públicos de transparência) · Impressões estimadas a partir de alcance × frequência médios da conta · Valores sujeitos a atualização pela Meta.
+</footer>
+</div>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('on');
+      e.target.querySelectorAll('[data-count]').forEach(function(el){
+        if(el.dataset.done) return; el.dataset.done = 1;
+        var end = parseInt(el.dataset.count,10), t0 = null;
+        function step(ts){ if(!t0) t0 = ts; var p = Math.min((ts-t0)/1400,1);
+          el.textContent = Math.round(end*(1-Math.pow(1-p,3))).toLocaleString('pt-BR');
+          if(p<1) requestAnimationFrame(step); }
+        requestAnimationFrame(step);
+      });
+      io.unobserve(e.target);
+    });
+  },{threshold:.25});
+  document.querySelectorAll('.stat,.fstep,.adcard').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
